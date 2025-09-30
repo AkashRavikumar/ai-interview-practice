@@ -4,9 +4,10 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>AI Interview Practice App - Idea</title>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
   <style>
     body {
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      font-family: 'Montserrat', sans-serif;
       margin: 0;
       padding: 0;
       line-height: 1.6;
@@ -15,20 +16,38 @@
     }
     header {
       background: linear-gradient(90deg, #0f0f0f, #111133);
-      color: #00f7ff;
+      color: #fff;
       padding: 30px 15px;
       text-align: center;
-      text-shadow: 0 0 10px #00f7ff;
+      position: relative;
+      overflow: hidden;
+    }
+    header::before {
+      content: "";
+      position: absolute;
+      top: -50%;
+      left: -50%;
+      width: 200%;
+      height: 200%;
+      background: radial-gradient(circle, rgba(0,255,255,0.15), transparent 70%);
+      animation: pulse 8s infinite alternate;
+    }
+    @keyframes pulse {
+      from { transform: rotate(0deg); }
+      to { transform: rotate(360deg); }
     }
     header h1 {
       margin: 0;
       font-size: 2.5rem;
+      position: relative;
+      z-index: 1;
     }
     header p {
       margin-top: 10px;
-      font-size: 1.2rem;
-      color: #ff66ff;
-      text-shadow: 0 0 10px #ff66ff;
+      font-size: 1.1rem;
+      position: relative;
+      z-index: 1;
+      color: #ccc;
     }
     .container {
       max-width: 900px;
@@ -40,18 +59,17 @@
       padding: 20px;
       background: #1a1a1a;
       border-radius: 15px;
-      box-shadow: 0 0 15px rgba(0,255,255,0.2);
+      box-shadow: 0 0 20px rgba(0,255,255,0.15);
     }
     h2 {
       color: #00f7ff;
-      text-shadow: 0 0 8px #00f7ff;
+      font-weight: 600;
     }
     ul li {
       margin: 10px 0;
     }
     strong {
-      color: #ff66ff;
-      text-shadow: 0 0 5px #ff66ff;
+      color: #00f7ff;
     }
     footer {
       text-align: center;
@@ -101,7 +119,7 @@
       <ul>
         <li><strong>Candidates:</strong> Get better prepared, more confident, and perform better in real interviews.</li>
         <li><strong>Interviewers:</strong> Save time by focusing on stronger, better-prepared candidates.</li>
-        <li><strong>Teams & Talent (T&T):</strong> Speeds up hiring, ensures fairness, and scales globally.</li>
+        <li><strong>Company:</strong> Speeds up hiring, ensures fairness, and scales globally.</li>
       </ul>
     </section>
 
@@ -132,6 +150,21 @@
           B --> C[Phase 3: Candidate Screening]
       </div>
     </section>
+
+    <!-- ⚙️ Tech Used section -->
+    <section>
+      <h2>Tech Used</h2>
+      <p>
+        The app leverages modern AI and web technologies to deliver a smooth and powerful experience:
+      </p>
+      <ul>
+        <li><strong>Frontend:</strong> React, Tailwind CSS</li>
+        <li><strong>Backend:</strong> Node.js, Express</li>
+        <li><strong>AI/ML:</strong> Large Language Models (LLMs), Speech-to-Text, NLP analysis</li>
+        <li><strong>Database:</strong> PostgreSQL / MongoDB</li>
+        <li><strong>Deployment:</strong> Docker, GitHub Actions, Cloud Hosting</li>
+      </ul>
+    </section>
   </div>
 
   <footer>
@@ -147,7 +180,7 @@
       themeVariables: {
         primaryColor: "#00f7ff",
         edgeLabelBackground: "#1a1a1a",
-        tertiaryColor: "#ff66ff"
+        tertiaryColor: "#00cc99"
       }
     });
   </script>
