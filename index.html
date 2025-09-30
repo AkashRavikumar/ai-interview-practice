@@ -11,43 +11,24 @@
       margin: 0;
       padding: 0;
       line-height: 1.6;
-      background: #0d0d0d;
-      color: #e6e6e6;
+      background: #fafafa;
+      color: #333;
     }
     header {
-      background: linear-gradient(90deg, #0f0f0f, #111133);
+      background: #2c3e50;
       color: #fff;
-      padding: 30px 15px;
+      padding: 40px 20px;
       text-align: center;
-      position: relative;
-      overflow: hidden;
-    }
-    header::before {
-      content: "";
-      position: absolute;
-      top: -50%;
-      left: -50%;
-      width: 200%;
-      height: 200%;
-      background: radial-gradient(circle, rgba(0,255,255,0.15), transparent 70%);
-      animation: pulse 8s infinite alternate;
-    }
-    @keyframes pulse {
-      from { transform: rotate(0deg); }
-      to { transform: rotate(360deg); }
     }
     header h1 {
       margin: 0;
-      font-size: 2.5rem;
-      position: relative;
-      z-index: 1;
+      font-size: 2.2rem;
+      font-weight: 600;
     }
     header p {
       margin-top: 10px;
       font-size: 1.1rem;
-      position: relative;
-      z-index: 1;
-      color: #ccc;
+      color: #e0e0e0;
     }
     .container {
       max-width: 900px;
@@ -55,37 +36,39 @@
       padding: 20px;
     }
     section {
-      margin-bottom: 50px;
+      margin-bottom: 40px;
       padding: 20px;
-      background: #1a1a1a;
-      border-radius: 15px;
-      box-shadow: 0 0 20px rgba(0,255,255,0.15);
+      background: #fff;
+      border-radius: 8px;
+      border: 1px solid #ddd;
     }
     h2 {
-      color: #00f7ff;
-      font-weight: 600;
+      color: #2c3e50;
+      margin-bottom: 15px;
+    }
+    ul {
+      padding-left: 20px;
     }
     ul li {
-      margin: 10px 0;
+      margin: 8px 0;
     }
     strong {
-      color: #00f7ff;
+      color: #2c3e50;
     }
     footer {
       text-align: center;
       padding: 15px;
-      background: #111;
-      color: #999;
-      border-top: 1px solid #333;
+      background: #2c3e50;
+      color: #fff;
+      font-size: 0.9rem;
+      margin-top: 40px;
     }
-    /* Mermaid container styling */
     .mermaid {
-      background: #0d0d0d;
-      border: 1px solid #333;
-      border-radius: 12px;
-      padding: 25px;
+      background: #f9f9f9;
+      border: 1px solid #ddd;
+      border-radius: 6px;
+      padding: 20px;
       margin-top: 20px;
-      box-shadow: 0 0 15px rgba(0,255,255,0.3);
     }
   </style>
 </head>
@@ -150,21 +133,6 @@
           B --> C[Phase 3: Candidate Screening]
       </div>
     </section>
-
-    <!-- ⚙️ Tech Used section -->
-    <section>
-      <h2>Tech Used</h2>
-      <p>
-        The app leverages modern AI and web technologies to deliver a smooth and powerful experience:
-      </p>
-      <ul>
-        <li><strong>Frontend:</strong> React, Tailwind CSS</li>
-        <li><strong>Backend:</strong> Node.js, Express</li>
-        <li><strong>AI/ML:</strong> Large Language Models (LLMs), Speech-to-Text, NLP analysis</li>
-        <li><strong>Database:</strong> PostgreSQL / MongoDB</li>
-        <li><strong>Deployment:</strong> Docker, GitHub Actions, Cloud Hosting</li>
-      </ul>
-    </section>
   </div>
 
   <footer>
@@ -174,15 +142,7 @@
   <!-- Load MermaidJS -->
   <script type="module">
     import mermaid from "https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.esm.min.mjs";
-    mermaid.initialize({
-      startOnLoad: true,
-      theme: "dark",
-      themeVariables: {
-        primaryColor: "#00f7ff",
-        edgeLabelBackground: "#1a1a1a",
-        tertiaryColor: "#00cc99"
-      }
-    });
+    mermaid.initialize({ startOnLoad: true, theme: "default" });
   </script>
 </body>
 </html>
