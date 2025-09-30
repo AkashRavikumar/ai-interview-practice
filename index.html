@@ -14,61 +14,99 @@
       background: #fafafa;
       color: #333;
     }
+
     header {
       background: #2c3e50;
       color: #fff;
-      padding: 40px 20px;
+      padding: 50px 20px;
       text-align: center;
     }
+
     header h1 {
       margin: 0;
-      font-size: 2.2rem;
-      font-weight: 600;
+      font-size: 3rem;
+      font-weight: 700;
+      background: linear-gradient(90deg, #6a11cb, #2575fc);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
     }
+
     header p {
       margin-top: 10px;
-      font-size: 1.1rem;
+      font-size: 1.2rem;
       color: #e0e0e0;
     }
+
     .container {
       max-width: 1000px;
       margin: auto;
       padding: 20px;
     }
+
     /* Two-column layout for Problem & Solution */
     .two-column {
       display: flex;
-      flex-wrap: wrap;
       gap: 20px;
       margin-bottom: 40px;
+      flex-wrap: wrap;
     }
-    .two-column section {
-      flex: 1 1 45%;
-      padding: 20px;
+
+    .two-column .card {
+      flex: 1 1 calc(50% - 10px);
       background: #fff;
-      border-radius: 8px;
+      padding: 25px;
+      border-radius: 10px;
       border: 1px solid #ddd;
+      box-sizing: border-box;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.05);
     }
+
+    @media (max-width: 768px) {
+      .two-column .card {
+        flex: 1 1 100%;
+      }
+    }
+
     section {
       margin-bottom: 40px;
-      padding: 20px;
+      padding: 25px;
       background: #fff;
-      border-radius: 8px;
+      border-radius: 10px;
       border: 1px solid #ddd;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.05);
     }
+
     h2 {
-      color: #2c3e50;
+      font-size: 2rem;
       margin-bottom: 15px;
+      font-weight: 700;
+      background: linear-gradient(90deg, #6a11cb, #2575fc);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
     }
+
+    h3 {
+      font-size: 1.5rem;
+      margin-top: 20px;
+      margin-bottom: 10px;
+      font-weight: 600;
+      background: linear-gradient(90deg, #ff512f, #dd2476);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+
     ul {
       padding-left: 20px;
     }
+
     ul li {
       margin: 8px 0;
     }
+
     strong {
       color: #2c3e50;
     }
+
     footer {
       text-align: center;
       padding: 15px;
@@ -77,10 +115,11 @@
       font-size: 0.9rem;
       margin-top: 40px;
     }
+
     .mermaid {
       background: #f9f9f9;
       border: 1px solid #ddd;
-      border-radius: 6px;
+      border-radius: 8px;
       padding: 20px;
       margin-top: 20px;
     }
@@ -93,9 +132,9 @@
   </header>
 
   <div class="container">
-    <!-- Two-column layout -->
+    <!-- Two-column layout for Problem & Solution -->
     <div class="two-column">
-      <section>
+      <section class="card">
         <h2>Current Problem</h2>
         <p>
           Interviewers spend a lot of time talking to candidates who may not be well-prepared 
@@ -104,7 +143,7 @@
         </p>
       </section>
 
-      <section>
+      <section class="card">
         <h2>The Solution</h2>
         <p>
           An AI-powered app where candidates can practice interview questions before the real interview. 
@@ -121,15 +160,6 @@
         <li><strong>Interviewers:</strong> Save time by focusing on stronger, better-prepared candidates.</li>
         <li><strong>Company:</strong> Speeds up hiring, ensures fairness, and scales globally.</li>
       </ul>
-    </section>
-
-    <section>
-      <h2>Future Potential</h2>
-      <p>
-        Over time, the app can evolve from a simple practice helper to a screening tool that helps 
-        prioritize the best-fit candidates for interviews — like CV sorting, but for interviews. 
-        This creates a scalable, data-driven hiring pipeline.
-      </p>
     </section>
 
     <!-- Roadmap section with detailed phases -->
