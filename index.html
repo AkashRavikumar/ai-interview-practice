@@ -16,10 +16,8 @@
     }
 
     header {
-      background: #2c3e50;
-      color: #fff;
-      padding: 50px 20px;
       text-align: center;
+      padding: 50px 20px;
     }
 
     header h1 {
@@ -34,20 +32,22 @@
     header p {
       margin-top: 10px;
       font-size: 1.2rem;
-      color: #e0e0e0;
+      color: #2c3e50;
     }
 
     .container {
       max-width: 1000px;
       margin: auto;
       padding: 20px;
+      display: flex;
+      flex-direction: column;
+      gap: 30px; /* equidistant spacing between sections */
     }
 
     /* Two-column layout for Problem & Solution */
     .two-column {
       display: flex;
       gap: 20px;
-      margin-bottom: 40px;
       flex-wrap: wrap;
     }
 
@@ -67,8 +67,7 @@
       }
     }
 
-    section {
-      margin-bottom: 40px;
+    section.card {
       padding: 25px;
       background: #fff;
       border-radius: 10px;
@@ -89,8 +88,8 @@
       font-size: 1.5rem;
       margin-top: 20px;
       margin-bottom: 10px;
-      font-weight: 600;
-      background: linear-gradient(90deg, #ff512f, #dd2476);
+      font-weight: 700;
+      background: linear-gradient(90deg, #00b09b, #96c93d); /* green → purple gradient */
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent;
     }
@@ -153,7 +152,7 @@
       </section>
     </div>
 
-    <section>
+    <section class="card">
       <h2>Benefits</h2>
       <ul>
         <li><strong>Candidates:</strong> Get better prepared, more confident, and perform better in real interviews.</li>
@@ -162,11 +161,11 @@
       </ul>
     </section>
 
-    <!-- Roadmap section with detailed phases -->
-    <section>
+    <!-- Roadmap section -->
+    <section class="card">
       <h2>Roadmap</h2>
 
-      <h3>Phase 1 – Helper Tool (Initial Phase)</h3>
+      <h3>Phase 1 – Helper Tool</h3>
       <ul>
         <li>Let candidates practice with question sets relevant to the position applied for.</li>
         <li>Central database stores questions from all interviewers by position and category.</li>
@@ -175,14 +174,14 @@
         <li>Ensures candidates come better prepared, saving interviewers’ time and making discussions more meaningful.</li>
       </ul>
 
-      <h3>Phase 2 – Insight Generator (Mature Phase)</h3>
+      <h3>Phase 2 – Insight Generator</h3>
       <ul>
         <li>Produces structured reports for HR and interviewers before the real interview.</li>
         <li>Helps compare candidates more fairly and consistently.</li>
         <li>Surfaces early insights into candidate strengths and gaps (e.g., technical vs. soft skills).</li>
       </ul>
 
-      <h3>Phase 3 – Screening & Line-Up Optimization (Future Phase)</h3>
+      <h3>Phase 3 – Screening & Line-Up Optimization</h3>
       <ul>
         <li>Evolves into a screening support tool: like CV sorting, but for interview readiness.</li>
         <li>Uses AI insights to prioritize candidates → best-fit candidates get interviewed first.</li>
