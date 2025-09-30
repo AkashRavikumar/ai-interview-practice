@@ -6,7 +6,7 @@
   <title>AI Interview Practice App - Idea</title>
   <style>
     body {
-      font-family: "Segoe UI", Roboto, Arial, sans-serif;
+      font-family: Arial, sans-serif;
       margin: 0;
       padding: 0;
       line-height: 1.6;
@@ -14,18 +14,13 @@
       color: #333;
     }
     header {
-      background: linear-gradient(135deg, #4a90e2, #357ab8);
+      background: #4a90e2;
       color: #fff;
-      padding: 30px 15px;
+      padding: 20px 10px;
       text-align: center;
     }
     header h1 {
       margin: 0;
-      font-size: 2.2em;
-    }
-    header p {
-      font-size: 1.2em;
-      margin-top: 5px;
     }
     .container {
       max-width: 900px;
@@ -33,121 +28,80 @@
       padding: 20px;
     }
     section {
-      margin-bottom: 50px;
+      margin-bottom: 40px;
     }
     h2 {
-      color: #357ab8;
-      margin-bottom: 10px;
-    }
-    ul, ol {
-      margin: 10px 0;
-      padding-left: 20px;
-    }
-    .mermaid {
-      text-align: center;
-      margin: 25px auto;
-      background: #fff;
-      padding: 20px;
-      border-radius: 8px;
-      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+      color: #4a90e2;
     }
     footer {
       text-align: center;
-      padding: 15px;
+      padding: 10px;
       background: #333;
       color: #fff;
-      font-size: 0.9em;
+    }
+    /* Mermaid container styling */
+    .mermaid {
+      background: #fff;
+      border: 1px solid #ccc;
+      border-radius: 10px;
+      padding: 20px;
+      margin-top: 20px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
     }
   </style>
-  <!-- Load Mermaid.js -->
-  <script type="module">
-    import mermaid from "https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.esm.min.mjs";
-    mermaid.initialize({ startOnLoad: true, theme: "default" });
-  </script>
 </head>
 <body>
   <header>
     <h1>AI-Powered Interview Practice App</h1>
-    <p>Helping candidates shine and saving time for interviewers</p>
+    <p>An idea to make interviews smarter and more efficient</p>
   </header>
 
   <div class="container">
     <section>
-      <h2>The Problem</h2>
-      <p>Hiring processes often consume significant interviewer time. Many candidates arrive underprepared, which results in repetitive early-stage interviews that don’t reveal true fit.</p>
-      <ul>
-        <li>Interviewers spend hours asking the same basic questions.</li>
-        <li>Strong candidates aren’t always prioritized in the lineup.</li>
-        <li>Candidates feel anxious and uncertain, which reduces performance.</li>
-      </ul>
+      <h2>Current Problem</h2>
+      <p>Interviewers spend a lot of time talking to candidates who may not be well-prepared or the best fit. This takes up valuable time and slows down hiring.</p>
     </section>
 
     <section>
       <h2>The Solution</h2>
-      <p>An AI-powered app where candidates practice interview questions before the real interview. The AI provides instant feedback on their answers, highlighting strengths and areas to improve. A structured report is shared with HR, helping them focus interviews on deeper discussions.</p>
-      <ul>
-        <li>Candidates practice in a safe, low-pressure environment.</li>
-        <li>Interviewers get insights before the first conversation.</li>
-        <li>The company ensures a fairer, more consistent hiring process.</li>
-      </ul>
-    </section>
-
-    <section>
-      <h2>How It Works</h2>
-      <ol>
-        <li>Candidate applies for a job and receives a unique invite code.</li>
-        <li>They log in with their email and code to access the app.</li>
-        <li>They practice answering a short set of realistic interview questions.</li>
-        <li>The AI listens, evaluates, and provides instant feedback.</li>
-        <li>A simple report is generated for HR to review before the actual interview.</li>
-      </ol>
-
-      <div class="mermaid">
-        flowchart TD
-          A[Candidate Applies] --> B[Gets Invite Code]
-          B --> C[Logs into App]
-          C --> D[Practices Interview Questions]
-          D --> E[AI Analyzes & Gives Feedback]
-          E --> F[Report Generated for HR]
-          F --> G[HR Prepares for Interview]
-      </div>
+      <p>An AI-powered app where candidates can practice interview questions before the real interview. The AI provides instant feedback on their answers and generates a summary report for HR and interviewers.</p>
     </section>
 
     <section>
       <h2>Benefits</h2>
       <ul>
-        <li><strong>Candidates:</strong> Build confidence, reduce anxiety, and understand expectations before the real interview.</li>
-        <li><strong>Interviewers:</strong> Save time by skipping basics and focusing on higher-value discussions.</li>
-        <li><strong>The Company:</strong> Faster hiring, more consistent candidate evaluation, and better global scalability.</li>
+        <li><strong>Candidates:</strong> Get better prepared, more confident, and perform better in real interviews.</li>
+        <li><strong>Interviewers:</strong> Save time by focusing on stronger, better-prepared candidates.</li>
+        <li><strong>T&T:</strong> Speeds up hiring, ensures fairness, and scales globally.</li>
       </ul>
     </section>
 
     <section>
-      <h2>Roadmap</h2>
-      <p>The app will grow in three phases:</p>
-      <div class="mermaid">
-        timeline
-          title Project Roadmap
-          section Phase 1: Practice Tool
-            Candidate login & practice : Now
-            AI feedback & HR report : Now
-          section Phase 2: Insights
-            HR dashboards & candidate comparison : Soon
-            Structured feedback reports : Soon
-          section Phase 3: Screening
-            AI-assisted shortlisting : Future
-            Interview lineup optimization : Future
-      </div>
+      <h2>Future Potential</h2>
+      <p>Over time, the app can evolve from a simple practice helper to a screening tool that helps prioritize the best-fit candidates for interviews — like CV sorting, but for interviews.</p>
     </section>
 
+    <!-- 🚀 New Roadmap section with Mermaid -->
     <section>
-      <h2>What Do You Think?</h2>
-      <p>This idea is in early stages. Would you find this useful if you were a candidate or part of an HR team? Which part excites you most — practice tool, HR insights, or AI screening?</p>
+      <h2>Roadmap</h2>
+      <div class="mermaid">
+        graph TD
+          A[Phase 1: Prototype] --> B[Phase 2: AI Feedback System]
+          B --> C[Phase 3: Beta Launch]
+          C --> D[Phase 4: Enterprise Integration]
+          D --> E[Phase 5: Global Scale]
+      </div>
     </section>
   </div>
 
   <footer>
     <p>© 2025 AI Interview Practice App - Idea</p>
   </footer>
+
+  <!-- Load MermaidJS -->
+  <script type="module">
+    import mermaid from "https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.esm.min.mjs";
+    mermaid.initialize({ startOnLoad: true });
+  </script>
 </body>
 </html>
