@@ -137,14 +137,6 @@
       font-size: 0.9rem;
       margin-top: 40px;
     }
-
-    .mermaid {
-      background: #f9f9f9;
-      border: 1px solid #ddd;
-      border-radius: 8px;
-      padding: 20px;
-      margin-top: 20px;
-    }
   </style>
 </head>
 <body>
@@ -184,49 +176,38 @@
       </ul>
     </section>
 
-    <!-- Mindmap Section -->
+    <!-- Roadmap Section -->
     <section class="card">
-      <h2>Mind Map</h2>
-      <div class="mermaid">
-        mindmap
-          root((AI Interview Practice App))
-            Problem
-              Interviewers spend time on unprepared candidates
-              Candidates nervous → weak performance
-              Hiring process slows down
-            Solution
-              Practice tool with realistic questions
-              AI feedback on answers
-              Generates clear reports
-            Benefits
-              Candidates: more confident and ready
-              Interviewers: save time
-              Company: faster, fairer and scalable hiring
-            Roadmap
-              Phase 1: Helper Tool
-                Central question bank
-                Practice platform
-                Instant AI feedback
-              Phase 2: Insight Generator
-                Structured reports
-                Fairer comparisons
-                Identify skill gaps
-              Phase 3: Screening Optimisation
-                Prioritise best-fit candidates
-                Reduce time wasted on weak fits
-                Scalable globally
-      </div>
+      <h2>Roadmap</h2>
+
+      <h3>Phase 1 – Helper Tool</h3>
+      <ul>
+        <li>Let candidates practise with question sets relevant to the position applied for.</li>
+        <li>Central database stores questions from all interviewers by position and category.</li>
+        <li>Acts as a practice platform for candidates, simulating real company-style interviews.</li>
+        <li>Provides instant AI feedback on communication, clarity and competency fit.</li>
+        <li>Ensures candidates come better prepared, saving interviewers’ time and making discussions more meaningful.</li>
+      </ul>
+
+      <h3>Phase 2 – Insight Generator</h3>
+      <ul>
+        <li>Produces structured reports for HR and interviewers before the real interview.</li>
+        <li>Helps compare candidates more fairly and consistently.</li>
+        <li>Surfaces early insights into candidate strengths and gaps (e.g., technical vs. soft skills).</li>
+      </ul>
+
+      <h3>Phase 3 – Screening Optimisation</h3>
+      <ul>
+        <li>Evolves into a screening support tool, like CV sorting but for interview readiness.</li>
+        <li>Uses AI insights to prioritise candidates → best-fit candidates get interviewed first.</li>
+        <li>Saves time and accelerates hiring by reducing hours spent on weak fits.</li>
+        <li>Scalable across teams, roles and regions, standardising the hiring experience globally.</li>
+      </ul>
     </section>
   </div>
 
   <footer>
     <p>© 2025 AI Interview Practice App - Idea</p>
   </footer>
-
-  <!-- Load MermaidJS -->
-  <script type="module">
-    import mermaid from "https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.esm.min.mjs";
-    mermaid.initialize({ startOnLoad: true, theme: "default" });
-  </script>
 </body>
 </html>
