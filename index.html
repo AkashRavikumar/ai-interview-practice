@@ -13,6 +13,21 @@
       line-height: 1.6;
       background: #fafafa;
       color: #333;
+      position: relative;
+    }
+
+    /* Background image overlay */
+    body::before {
+      content: "";
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: url("https://img.freepik.com/free-vector/job-interview-concept-illustration_114360-17443.jpg") no-repeat center center;
+      background-size: cover;
+      opacity: 0.1; /* 90% transparent */
+      z-index: -1; /* keep behind everything */
     }
 
     header {
@@ -41,7 +56,7 @@
       padding: 20px;
       display: flex;
       flex-direction: column;
-      gap: 30px; /* equidistant spacing between sections */
+      gap: 30px; /* equal spacing between sections */
     }
 
     /* Two-column layout for Problem & Solution */
@@ -59,6 +74,13 @@
       border: 1px solid #ddd;
       box-sizing: border-box;
       box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+      transition: transform 0.2s ease, box-shadow 0.2s ease;
+    }
+
+    .two-column .card:hover,
+    section.card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 8px 20px rgba(0,0,0,0.1);
     }
 
     @media (max-width: 768px) {
@@ -73,6 +95,7 @@
       border-radius: 10px;
       border: 1px solid #ddd;
       box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+      transition: transform 0.2s ease, box-shadow 0.2s ease;
     }
 
     h2 {
@@ -89,7 +112,7 @@
       margin-top: 20px;
       margin-bottom: 10px;
       font-weight: 700;
-      background: linear-gradient(90deg, #00b09b, #96c93d); /* green → purple gradient */
+      background: linear-gradient(90deg, #00b09b, #8e2de2); /* green → purple gradient */
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent;
     }
