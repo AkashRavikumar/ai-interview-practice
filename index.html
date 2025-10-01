@@ -26,8 +26,8 @@
       height: 100%;
       background: url("https://img.freepik.com/free-vector/job-interview-concept-illustration_114360-17443.jpg") no-repeat center center;
       background-size: cover;
-      opacity: 0.5; /* 50% transparent */
-      z-index: -1; /* keep behind everything */
+      opacity: 0.1;
+      z-index: -1;
     }
 
     header {
@@ -56,10 +56,10 @@
       padding: 20px;
       display: flex;
       flex-direction: column;
-      gap: 30px; /* equal spacing between sections */
+      gap: 30px;
     }
 
-    /* Two-column layout for Problem & Solution */
+    /* Two-column layout */
     .two-column {
       display: flex;
       gap: 20px;
@@ -112,7 +112,7 @@
       margin-top: 20px;
       margin-bottom: 10px;
       font-weight: 700;
-      background: linear-gradient(90deg, #00b09b, #8e2de2); /* green → purple gradient */
+      background: linear-gradient(90deg, #00b09b, #8e2de2);
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent;
     }
@@ -150,27 +150,27 @@
 <body>
   <header>
     <h1>AI-Powered Interview Practice App</h1>
-    <p>An idea to make interviews smarter and more efficient</p>
+    <p>An idea to make interviews smarter and more effective</p>
   </header>
 
   <div class="container">
-    <!-- Two-column layout for Problem & Solution -->
+    <!-- Two-column layout -->
     <div class="two-column">
       <section class="card">
         <h2>Current Problem</h2>
         <p>
-          Interviewers spend a lot of time talking to candidates who may not be well-prepared 
-          or the best fit. This takes up valuable time and slows down hiring. Candidates often 
-          feel nervous or unprepared, leading to poor interview performance even if they have the skills.
+          Interviewers often spend time speaking with candidates who are not well-prepared or not the right fit. 
+          This wastes valuable time and slows down the hiring process. Candidates may feel nervous or unsure, 
+          which can lead to poor performance even if they have the right skills.
         </p>
       </section>
 
       <section class="card">
         <h2>The Solution</h2>
         <p>
-          An AI-powered app where candidates can practice interview questions before the real interview. 
-          The AI provides instant feedback on their answers, evaluates communication clarity, technical 
-          accuracy, and confidence. It then generates a summary report for HR and interviewers.
+          An AI-powered app where candidates can practise interview questions before their actual interview. 
+          The AI provides instant feedback on answers, checks communication skills, technical knowledge and confidence, 
+          and produces a summary report for HR and interviewers.
         </p>
       </section>
     </div>
@@ -178,44 +178,43 @@
     <section class="card">
       <h2>Benefits</h2>
       <ul>
-        <li><strong>Candidates:</strong> Get better prepared, more confident, and perform better in real interviews.</li>
+        <li><strong>Candidates:</strong> Become more confident, better prepared and perform well in real interviews.</li>
         <li><strong>Interviewers:</strong> Save time by focusing on stronger, better-prepared candidates.</li>
-        <li><strong>Company:</strong> Speeds up hiring, ensures fairness, and scales globally.</li>
+        <li><strong>Company:</strong> Speeds up recruitment, ensures fairness, and supports hiring at scale.</li>
       </ul>
     </section>
 
-    <!-- Roadmap section -->
+    <!-- Mindmap Section -->
     <section class="card">
-      <h2>Roadmap</h2>
-
-      <h3>Phase 1 – Helper Tool</h3>
-      <ul>
-        <li>Let candidates practice with question sets relevant to the position applied for.</li>
-        <li>Central database stores questions from all interviewers by position and category.</li>
-        <li>Acts as a practice platform for candidates, simulating real Company-style interviews.</li>
-        <li>Provides instant AI feedback on communication, clarity, and competency fit.</li>
-        <li>Ensures candidates come better prepared, saving interviewers’ time and making discussions more meaningful.</li>
-      </ul>
-
-      <h3>Phase 2 – Insight Generator</h3>
-      <ul>
-        <li>Produces structured reports for HR and interviewers before the real interview.</li>
-        <li>Helps compare candidates more fairly and consistently.</li>
-        <li>Surfaces early insights into candidate strengths and gaps (e.g., technical vs. soft skills).</li>
-      </ul>
-
-      <h3>Phase 3 – Screening & Line-Up Optimization</h3>
-      <ul>
-        <li>Evolves into a screening support tool: like CV sorting, but for interview readiness.</li>
-        <li>Uses AI insights to prioritize candidates → best-fit candidates get interviewed first.</li>
-        <li>Saves time and accelerates hiring by reducing hours spent on weak fits.</li>
-        <li>Scalable across teams, roles, and regions, standardizing the hiring experience globally.</li>
-      </ul>
-
+      <h2>Mind Map</h2>
       <div class="mermaid">
-        graph LR
-          A[Phase 1: Helper Tool] --> B[Phase 2: Insight Generator]
-          B --> C[Phase 3: Screening & Line-Up Optimization]
+        mindmap
+          root((AI Interview Practice App))
+            Problem
+              Interviewers spend time on unprepared candidates
+              Candidates nervous → weak performance
+              Hiring process slows down
+            Solution
+              Practice tool with realistic questions
+              AI feedback on answers
+              Generates clear reports
+            Benefits
+              Candidates: more confident and ready
+              Interviewers: save time
+              Company: faster, fairer and scalable hiring
+            Roadmap
+              Phase 1: Helper Tool
+                Central question bank
+                Practice platform
+                Instant AI feedback
+              Phase 2: Insight Generator
+                Structured reports
+                Fairer comparisons
+                Identify skill gaps
+              Phase 3: Screening Optimisation
+                Prioritise best-fit candidates
+                Reduce time wasted on weak fits
+                Scalable globally
       </div>
     </section>
   </div>
@@ -231,4 +230,3 @@
   </script>
 </body>
 </html>
-
